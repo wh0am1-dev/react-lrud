@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json.schemastore.org/package",
+  "name": "react-lrud",
+  "version": "1.0.0",
+  "description": "react lib for keyboard navigation",
+  "repository": "https://github.com/Neko250/react-lrud",
+  "author": "Carlos Aguilar <hi@wh0am1.dev>",
+  "license": "MIT",
+  "private": true,
+  "source": "src/index.ts",
+  "main": "dist/main.js",
+  "module": "dist/module.js",
+  "types": "dist/types.d.ts",
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "parcel build",
+    "prepare": "husky install",
+    "prettier": "prettier -c .",
+    "format": "prettier -w ."
+  },
+  "dependencies": {
+    "lrud": "^8.0.0"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.28",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.1.2",
+    "parcel": "latest",
+    "prettier": "^2.8.4",
+    "react": "^18.2.0"
+  }
+}
