@@ -1,3 +1,5 @@
+parcel-bundle-reports
+.parcel-cache
 node_modules
 .vscode
 .husky
