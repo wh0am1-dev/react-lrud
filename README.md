@@ -1,10 +1,10 @@
-# react-lrud
+# 🚢 react-lrud
 
-React lib for keyboard navigation
+react lib for keyboard navigation
 
-## Usage
+## usage
 
-First, wrap your app with the `Navigation` context.
+first, wrap your app with the `Navigation` context
 
 ```tsx
 import { createRoot } from 'react'
@@ -19,8 +19,8 @@ const App = () => (
 createRoot(document.querySelector('#root')).render(<App />)
 ```
 
-Then, register nodes using the `useFocus` hook.  
-Take a look at [lrud's docs](https://github.com/bbc/lrud/blob/HEAD/docs/usage.md#registration-options) for reference about the config.
+then, register nodes using the `useFocus` hook  
+take a look at [lrud's docs](https://github.com/bbc/lrud/blob/HEAD/docs/usage.md#registration-options) for reference about the config
 
 ```tsx
 import { useEffect } from 'react'
@@ -45,7 +45,7 @@ const Link = ({ parent, href, children }) => {
 }
 
 const Navbar = ({ parent, links }) => {
-  const { id } = useFocus({ parent })
+  const { id } = useFocus({ parent, orientation: 'horizontal' })
 
   return (
     <nav>
