@@ -77,3 +77,9 @@ const Home = () => {
   )
 }
 ```
+
+## bundle analysis
+
+just 4kb! 🐜
+
+![bundle](bundle.png)
