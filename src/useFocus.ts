@@ -45,7 +45,9 @@ export const useFocus = <T extends HTMLElement>(
               focus(element)
             },
           })
-        } catch (error) {}
+        } catch (error) {
+          console.warn(error)
+        }
       }
     },
     [id, lrud, focus]
